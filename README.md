@@ -47,25 +47,10 @@ This project demonstrates a database for analyzing healthcare appointments, incl
 FROM Appointments
 GROUP BY AppointmentType;
 
-3.  **Revenue by Clinician:**
-```sql
-SELECT c.Name AS ClinicianName, SUM(a.Revenue) AS TotalRevenue
-FROM Appointments a
-JOIN Clinicians c ON a.ClinicianID = c.ClinicianID
-GROUP BY c.Name
-ORDER BY TotalRevenue DESC;
-  
-4.  **Weekly Trends:**
+3. **Revenue by Clinician:**
    ```sql
-SELECT YEAR(AppointmentDate) AS Year, WEEK(AppointmentDate) AS WeekNumber, COUNT(*) AS WeeklyAppointments
-FROM Appointments
-GROUP BY YEAR(AppointmentDate), WEEK(AppointmentDate)
-ORDER BY Year, WeekNumber;
-
-5. **Appointments by Gender:**
-   ```sql
-SELECT p.Gender, COUNT(a.AppointmentID) AS TotalAppointments, AVG(a.Revenue) AS AverageRevenue
-FROM Appointments a
-JOIN Patients p ON a.PatientID = p.PatientID
-GROUP BY p.Gender;
-- Analyzes appointment trends and revenue averages by gender.
+   SELECT c.Name AS ClinicianName, SUM(a.Revenue) AS TotalRevenue
+   FROM Appointments a
+   JOIN Clinicians c ON a.ClinicianID = c.ClinicianID
+   GROUP BY c.Name
+   ORDER BY TotalRevenue DESC;
