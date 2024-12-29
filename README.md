@@ -63,4 +63,9 @@ GROUP BY AppointmentType;
    ORDER BY Year, WeekNumber;
 
 5. **Appointments by Gender:**
-   
+   ```sql
+   SELECT p.Gender, COUNT(a.AppointmentID) AS TotalAppointments, AVG(a.Revenue) AS AverageRevenue
+   FROM Appointments a
+   JOIN Patients p ON a.PatientID = p.PatientID
+   GROUP BY p.Gender;
+
