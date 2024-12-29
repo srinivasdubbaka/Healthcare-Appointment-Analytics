@@ -48,6 +48,8 @@ FROM Appointments
 GROUP BY AppointmentType;
 
 3.  **Revenue by Clinician:**
+
+3.  **Revenue by Clinician:**
 ```sql
 SELECT c.Name AS ClinicianName, SUM(a.Revenue) AS TotalRevenue
 FROM Appointments a
