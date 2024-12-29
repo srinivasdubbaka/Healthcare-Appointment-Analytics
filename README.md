@@ -78,3 +78,7 @@ This project demonstrates a database for analyzing healthcare appointments, incl
 - **Run SQL queries:**
   - Copy and paste the provided queries into your SQL Workbench.
   - Analyze the output to uncover insights.
+ 
+## 🌐 Link
+- **GitHub Repository:**
+  - https://github.com/srinivasdubbaka/Healthcare-Appointment-Analytics/blob/main/healthcare_appointment_analytics.sql
