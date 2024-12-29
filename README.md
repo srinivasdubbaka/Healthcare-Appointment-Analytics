@@ -56,6 +56,7 @@ GROUP BY AppointmentType;
    ORDER BY TotalRevenue DESC;
 
 4. **Weekly Trends:**
+   ```sql
 SELECT YEAR(AppointmentDate) AS Year, WEEK(AppointmentDate) AS WeekNumber, COUNT(*) AS WeeklyAppointments
 FROM Appointments
 GROUP BY YEAR(AppointmentDate), WEEK(AppointmentDate)
