@@ -54,3 +54,5 @@ GROUP BY AppointmentType;
    JOIN Clinicians c ON a.ClinicianID = c.ClinicianID
    GROUP BY c.Name
    ORDER BY TotalRevenue DESC;
+
+4. **Weekly Trends:**
