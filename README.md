@@ -44,8 +44,8 @@ This project demonstrates a database for analyzing healthcare appointments, incl
 2. **No-Show Rates:**
    ```sql
    SELECT AppointmentType, COUNT(CASE WHEN NoShow = TRUE THEN 1 END) * 100.0 / COUNT(*) AS NoShowRate
-FROM Appointments
-GROUP BY AppointmentType;
+   FROM Appointments
+   GROUP BY AppointmentType;
 
 3. **Revenue by Clinician:**
    ```sql
