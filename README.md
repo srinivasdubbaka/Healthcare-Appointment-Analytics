@@ -69,7 +69,8 @@ This project demonstrates a database for analyzing healthcare appointments, incl
    JOIN Patients p ON a.PatientID = p.PatientID
    GROUP BY p.Gender;
 
-🏗️ How to Use
+
+## 🏗️ How to Use
 Set up the database:
 
 Execute the CREATE DATABASE and CREATE TABLE scripts.
