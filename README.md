@@ -55,7 +55,7 @@ JOIN Clinicians c ON a.ClinicianID = c.ClinicianID
 GROUP BY c.Name
 ORDER BY TotalRevenue DESC;
 
-4. **Weekly Trends:**
+4.  **Weekly Trends:**
    ```sql
 SELECT YEAR(AppointmentDate) AS Year, WEEK(AppointmentDate) AS WeekNumber, COUNT(*) AS WeeklyAppointments
 FROM Appointments
