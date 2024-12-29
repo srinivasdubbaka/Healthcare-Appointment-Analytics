@@ -48,14 +48,14 @@ FROM Appointments
 GROUP BY AppointmentType;
 
 3.  **Revenue by Clinician:**
-
-3.  **Revenue by Clinician:**
 ```sql
 SELECT c.Name AS ClinicianName, SUM(a.Revenue) AS TotalRevenue
 FROM Appointments a
 JOIN Clinicians c ON a.ClinicianID = c.ClinicianID
 GROUP BY c.Name
 ORDER BY TotalRevenue DESC;
+
+4. **Weekly Trends:**
   
 4.  **Weekly Trends:**
    ```sql
